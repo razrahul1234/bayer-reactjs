@@ -105,3 +105,7 @@ button:focus-visible {
   height : 45px !important;
   margin: auto !important;
 }
+
+.MuiToolbar-gutters{
+  width: 100% !important;
+}
