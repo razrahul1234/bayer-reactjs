@@ -1,13 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
-import Home from './pages/Home'
+import Home from './pages/Home';
 import Login from "./pages/Login";
-
+import { BrowserRouter as Router, Routes, Route,Link } from 'react-router-dom';
+import Register from './pages/Register';
+import Dashboard from './pages/Dashboard';
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
@@ -32,7 +34,15 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <Home /> */}
-      <Login />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/register' element={<Register />}></Route>
+          <Route path="/dashboard" element={<Dashboard />}></Route>
+        </Routes>
+      </Router>
+      {/* <Login /> */}
     </>
   )
 }

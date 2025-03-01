@@ -1,11 +1,13 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
+  /* background-color: dodgerblue; */
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,7 +27,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -65,4 +67,41 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.MuiDrawer-paperAnchorLeft, .MuiDrawer-paperAnchorDockedLeft{
+  top: 64px !important;
+  background-color: #1976d2 !important ;
+  color: #ffffff !important;
+}
+
+.MuiTreeItem-label{
+  order:1 !important;
+  font-weight: 100 !important;
+}
+
+.MuiTreeItem-iconContainer{
+  order:2 !important;
+  font-weight: 100 !important;
+}
+
+.header{
+  background-color: #ffffff !important;
+  color: #1976d2 !important;
+}
+/* .css-1fytndg-MuiButtonBase-root-MuiIconButton-root, .css-ij6izv-MuiButtonBase-root-MuiIconButton-root,
+.css-h7cjts-MuiButtonBase-root-MuiIconButton-root {
+  color: #1976d2 !important;
+} */
+.titlename{
+  color: black !important;
+}
+
+.Mui-selected{
+  background-color: rgb(60, 179, 113)  !important;
+}
+
+.MuiOutlinedInput-notchedOutline{
+  height : 45px !important;
+  margin: auto !important;
 }

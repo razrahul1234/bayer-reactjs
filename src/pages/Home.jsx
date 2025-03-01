@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import FetchData from '../../utils/dataFetch';
+import "./Home.css";
 
 function Home() {
 //   const [count, setCount] = useState(0)
@@ -18,9 +19,28 @@ function Home() {
 
 
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <div className="container">
+      {/* Header */}
+      <div className="header">Bayer Pharmaceuticals</div>
+
+      {/* Navigation */}
+      <nav className="navigation">
+        <a href="#">Home</a>
+        <a href="#">Login</a>
+        <a href="#">About Us</a>
+        <a href="#">Register</a>
+      </nav>
+
+      {/* Main Content */}
+      <div className="content">
+        <h2>About Bayer Pharmaceuticals</h2>
+        <p>
+          Bayer Pharmaceuticals is a global enterprise with core competencies in 
+          the Life Science fields of health care and agriculture. Their products and 
+          services are designed to benefit people and improve their quality of life.
+        </p>
+      </div>
+    </div>
   )
 }
 
