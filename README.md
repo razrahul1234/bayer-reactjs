@@ -139,6 +139,13 @@ Feel free to contribute by creating pull requests. Follow these steps:
 3. Commit your changes
 4. Push to your fork and create a pull request
 
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/4df4adcd-a389-4e7f-9ac5-cdd5ab53f833" />
+
+
+
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/8d917a5f-832a-46eb-a812-ffe8cf464127" />
+
 ## License
 
 This project is licensed under the **MIT License**.
