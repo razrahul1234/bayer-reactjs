@@ -25,6 +25,7 @@ const Login = () => {
     }).then(res => res.json()).then(res => {
        console.log("res[0] : ", res);
         dispatch(setUser({...res.user[0]}));
+        navigate("/dashboard")
     })
   };
 

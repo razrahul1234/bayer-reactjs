@@ -19,12 +19,12 @@ function Home() {
 
 
   return (
-    <div className="container">
+    <div className="containerHome">
       {/* Header */}
-      <div className="header">Bayer Pharmaceuticals</div>
+      <div className="headerHome">Bayer Pharmaceuticals</div>
 
-      {/* Navigation */}
-      <nav className="navigation">
+      {/* navigationHome */}
+      <nav className="navigationHome">
         <a href="#">Home</a>
         <a href="#">Login</a>
         <a href="#">About Us</a>

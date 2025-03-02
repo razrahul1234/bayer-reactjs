@@ -5,7 +5,8 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import { SimpleTreeView } from '@mui/x-tree-view/SimpleTreeView';
 import { TreeItem } from '@mui/x-tree-view/TreeItem';
-// import UserManagement from './UserManagement';
+import { setHealthTips } from "../../redux/HealthTipsSlice";
+import { useDispatch, useSelector } from 'react-redux';
 const drawerWidth = 251;
 
 
@@ -13,6 +14,10 @@ const Dashboard = () => {
     const [drawerOpen, setDrawerOpen] = useState(true);
     const [anchorEl, setAnchorEl] = useState(null);
     const [selectedItem, setSelectedItem] = useState('dashboard');
+    const dispatch = useDispatch();
+    const healthTips = useSelector(state => state.healthTips);
+
+    console.log("healthTips : ", healthTips);
 
     const handleDrawerToggle = () => {
         setDrawerOpen(!drawerOpen);
